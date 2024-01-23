@@ -10,7 +10,7 @@ body{
 
 div.container{
     width: 65%;
-    min-width: 800px;
+    /* min-width: 800px; */
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -20,7 +20,7 @@ div.container{
 }
 div.message{
     width: 55%;
-    min-width: 400px;
+    /* min-width: 400px; */
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -45,7 +45,7 @@ div.login{
     margin: 40px;
     border-radius: 15px;
 }
-div.login form{
+div.login div.form{
     padding: 20px;
     background-color: white;
     border-radius: 8px;
@@ -106,16 +106,104 @@ div.login > p{
 @media only screen and (max-width: 767px){
 
     div.container{
+        width: 100%;
+        height: 100vh;
+        margin: auto;
+        display: flex;
         flex-direction: column;
-        margin: auto;
+        justify-content: center;
+        align-items: center;
+        background-color: salmon;
     }
-
-    div.message, div.login{
-        width: 80%;
-        margin: auto;
+    div.message{
+        width: 90%;
+        /* min-width: 400px; */
+        /* height: 400px; */
+        display: flex;
+        flex-direction: column;
+        /* margin-top: 80px; */
+        /* padding: 20px; */
     }
-
-
+    div.message h1{
+        /* font-size: 40px; */
+        text-align: center;
+    }
+    div.message p{
+        /* font-size: 16px; */
+        text-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+        /* text-align: justify; */
+    }
+    div.login{
+        width: 90%;
+        /* min-width: 300px; */
+        /* height: 400px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        /* padding: 20px; */
+        /* margin: 40px; */
+        /* border-radius: 15px; */
+    }
+    div.login div.form{
+        /* padding: 20px; */
+        background-color: white;
+        /* border-radius: 8px; */
+        box-shadow: 3px 3px 10px lightgray;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    div.login input[type="text"], input[type="password"]{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: calc(100% - 7%); */
+        /* margin: 5px 0px; */
+        /* border-radius: 6px; */
+        /* font-size: 17px; */
+        /* padding: 15px; */
+        border: 1.5px solid lightgray;
+        
+    }
+    div.login input.login_button{
+        /* width: 100%; */
+        font-size: 20px;
+        /* height: 45px; */
+        /* margin: 5px 0px; */
+        border-radius: 6px;
+        font-weight: bold;
+    }
+    div.login a{
+        display: flex;
+        /* margin: 5px 0px; */
+        /* line-height: 40px; */
+        text-decoration: none;
+    }
+    div.login span{
+        /* width: 100%; */
+        border-bottom: 1.5px solid lightgray;
+        margin: 10px 0px;
+    }
+    div.login input.create{
+        font-size: 17px;
+        line-height: 45px;
+        margin-bottom: 7px;
+        border-radius: 6px;
+        font-weight: bold;
+        border: none;
+        /* padding: 0px 20px; */
+        /* margin: 5px 0px; */
+    }
+    div.login > p{
+        font-size: 13px;
+        /* margin: 0px auto; */
+    }
+    
 }
 
 
